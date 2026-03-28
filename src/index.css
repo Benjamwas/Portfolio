@@ -1,0 +1,48 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+@layer base {
+  body {
+    @apply bg-light text-charcoal transition-colors duration-300 antialiased selection:bg-royal selection:text-white;
+  }
+  .dark body {
+    @apply bg-dark text-slate-300 selection:bg-gold-500 selection:text-navy-900;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-navy-900 dark:text-white font-bold tracking-tight;
+  }
+}
+@layer utilities {
+  .glass {
+    @apply bg-white/70 dark:bg-navy-900/70 backdrop-blur-md border border-white/20 dark:border-white/10;
+  }
+  .glass-card {
+    @apply bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-royal to-navy-900 dark:from-blue-400 dark:to-teal-300;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Custom scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-light dark:bg-dark;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-navy-700 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400 dark:bg-navy-700;
+}
