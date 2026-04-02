@@ -103,9 +103,13 @@ export function Projects() {
                       </span>
                   )}
                   </div>
-                  <h3 className="text-2xl font-bold mb-3 group-hover:text-royal dark:group-hover:text-gold-400 transition-colors">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-2xl font-bold mb-3 group-hover:text-royal dark:group-hover:text-gold-400 transition-colors hover:underline">
                     {project.title}
-                  </h3>
+                  </a>
                   <p className="text-slate-600 dark:text-slate-400 mb-8 flex-grow">
                     {project.shortDescription}
                   </p>

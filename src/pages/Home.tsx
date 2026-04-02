@@ -1,4 +1,3 @@
-import React, { Children } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
@@ -9,10 +8,10 @@ import {
   BarChart3,
   Palette,
   ArrowRight,
-  CheckCircle2,
   Quote } from
 'lucide-react';
 import { AnimatedCounter } from '../components/AnimatedCounter';
+import { BrandTrust } from '../components/BrandTrust';
 import { projects } from '../data/projects';
 const fadeInUp = {
   hidden: {
@@ -411,6 +410,9 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* Brand Trust Section */}
+      <BrandTrust />
 
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">

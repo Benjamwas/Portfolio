@@ -98,7 +98,30 @@ export function Services() {
     'Design Systems',
     'Conversion Rate Optimization']
 
-  }];
+  },
+  {
+    icon: <Code className="w-8 h-8" />,
+    title: 'WordPress Development',
+    description:
+    'Custom WordPress themes and plugins tailored to your brand and business needs, with a focus on performance and SEO.',
+    features: [
+    'Custom Theme Development',
+    'Plugin Development & Customization',
+    'WooCommerce Solutions',
+    'Performance Optimization']
+  },
+    {
+    icon: <Palette className="w-8 h-8" />,
+    title: 'Graphic Design',
+    description:
+    'From logos to marketing materials, we create stunning visuals that capture your brand’s essence and resonate with your audience.',
+    features: [
+    'Logo & Brand Identity',
+    'Marketing Collateral',
+    'Social Media Graphics',
+    'Infographics']
+    },
+];
 
   const processSteps = [
   {

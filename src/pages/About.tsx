@@ -52,7 +52,48 @@ export function About() {
   {
     name: 'Automation Tools',
     icon: <Workflow className="w-6 h-6" />
-  }];
+  },
+   {
+    name: 'Cloud Platforms',
+    icon: <Globe className="w-6 h-6" />
+  },
+   {
+    name: 'AI & Machine Learning',
+    icon: <Cpu className="w-6 h-6" />
+  },
+   {
+    name: 'DevOps & CI/CD',
+    icon: <Server className="w-6 h-6" />
+  },
+   {
+    name: 'Cybersecurity',
+    icon: <Code2 className="w-6 h-6" />
+  },
+   {
+    name: 'Data Analytics',
+    icon: <Database className="w-6 h-6" />
+  },
+   {
+    name: 'Microservices Architecture',
+    icon: <Server className="w-6 h-6" />
+  },
+   {
+    name: 'Scalable Cloud Infrastructure',
+    icon: <Globe className="w-6 h-6" />
+  },
+   {
+    name: 'AI-Powered Solutions',
+    icon: <Cpu className="w-6 h-6" />
+  },
+{    name: 'WordPress Development', 
+    icon: <Workflow className="w-6 h-6" />
+ },
+ {
+   name: 'Graphic Design',
+   icon: <Eye className="w-6 h-6" />
+ }
+
+];
 
   return (
     <div className="pt-20 pb-24">

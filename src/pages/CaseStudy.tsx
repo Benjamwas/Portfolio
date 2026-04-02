@@ -179,6 +179,32 @@ export function CaseStudy() {
                   )}
                 </ul>
               </motion.div>
+
+              {project.caseStudy && (
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: 20
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0
+                  }}
+                  viewport={{
+                    once: true
+                  }}>
+                  
+                  <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                    <TrendingUp className="w-6 h-6 text-sky-600 dark:text-sky-400" />{' '}
+                    Case Study
+                  </h2>
+                  <div className="p-6 bg-sky-50 dark:bg-sky-900/10 border border-sky-100 dark:border-sky-900/30 rounded-xl">
+                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                      {project.caseStudy}
+                    </p>
+                  </div>
+                </motion.div>
+              )}
             </div>
 
             {/* Sidebar */}
@@ -211,6 +237,24 @@ export function CaseStudy() {
                     </li>
                   )}
                 </ul>
+
+                {project.results && project.results.length > 0 && (
+                  <div className="mt-6 pt-6 border-t border-slate-100 dark:border-navy-700">
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-3">
+                      Key Achievements:
+                    </h4>
+                    <ul className="space-y-2">
+                      {project.results.map((result, index) =>
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-slate-600 dark:text-slate-400 text-sm">
+                          <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
+                          <span>{result}</span>
+                        </li>
+                      )}
+                    </ul>
+                  </div>
+                )}
               </motion.div>
 
               <motion.div

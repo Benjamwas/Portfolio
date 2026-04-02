@@ -37,13 +37,13 @@ export function Footer() {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/benjamin-mwangi-a389bb339/"
                 className="text-slate-400 hover:text-royal dark:hover:text-gold-400 transition-colors">
                 
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://github.com/Benjamwas"
                 className="text-slate-400 hover:text-royal dark:hover:text-gold-400 transition-colors">
                 
                 <Github className="w-5 h-5" />
@@ -111,15 +111,17 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-royal dark:text-gold-500 shrink-0 mt-0.5" />
                 <span className="text-sm text-slate-600 dark:text-slate-400">
-                  123 Innovation Drive, Tech District
+                  Kahawa West
                   <br />
-                  San Francisco, CA 94105
+                  Nairobi, Kenya
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-royal dark:text-gold-500 shrink-0" />
                 <span className="text-sm text-slate-600 dark:text-slate-400">
-                  +1 (555) 123-4567
+                  (+254)/0739433017 / (+254)/0759998244
+                  <br />
+                  Mon-Fri, 9am to 6pm EAT
                 </span>
               </li>
               <li className="flex items-center gap-3">

@@ -193,10 +193,10 @@ export function Contact() {
                         Email Us
                       </h4>
                       <p className="text-slate-600 dark:text-slate-400">
-                        hello@nexorasystems.com
+                        benjamin@ecotenable.com
                       </p>
                       <p className="text-slate-600 dark:text-slate-400">
-                        support@nexorasystems.com
+                        mwangib297@gmail.com
                       </p>
                     </div>
                   </div>
@@ -210,10 +210,10 @@ export function Contact() {
                         Call Us
                       </h4>
                       <p className="text-slate-600 dark:text-slate-400">
-                        +1 (555) 123-4567
+                        (+254) 739433017 / (+254) 759998244
                       </p>
                       <p className="text-slate-600 dark:text-slate-400">
-                        Mon-Fri, 9am to 6pm PST
+                        Mon-Fri, 9am to 6pm EAT
                       </p>
                     </div>
                   </div>
@@ -227,10 +227,10 @@ export function Contact() {
                         Visit Us
                       </h4>
                       <p className="text-slate-600 dark:text-slate-400">
-                        123 Innovation Drive, Tech District
+                        Kahawa West, Nairobi
                       </p>
                       <p className="text-slate-600 dark:text-slate-400">
-                        San Francisco, CA 94105
+                        
                       </p>
                     </div>
                   </div>
@@ -247,13 +247,13 @@ export function Contact() {
                     <Twitter className="w-5 h-5" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/benjamin-mwangi-a389bb339/"
                     className="w-10 h-10 rounded-full bg-slate-100 dark:bg-navy-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-royal hover:text-white dark:hover:bg-gold-500 dark:hover:text-navy-900 transition-all">
                     
                     <Linkedin className="w-5 h-5" />
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/Benjamwas"
                     className="w-10 h-10 rounded-full bg-slate-100 dark:bg-navy-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-royal hover:text-white dark:hover:bg-gold-500 dark:hover:text-navy-900 transition-all">
                     
                     <Github className="w-5 h-5" />
