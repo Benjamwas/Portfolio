@@ -51,7 +51,7 @@ export function Navbar() {
           <Link to="/" className="flex items-center gap-2 group">
             <Hexagon className="w-8 h-8 text-royal dark:text-gold-500 fill-royal/20 dark:fill-gold-500/20 group-hover:rotate-12 transition-transform duration-300" />
             <span className="font-bold text-xl tracking-tight text-navy-900 dark:text-white">
-              Nexora
+              Apex
               <span className="text-royal dark:text-gold-500">Systems</span>
             </span>
           </Link>

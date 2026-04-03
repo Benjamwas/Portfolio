@@ -18,7 +18,7 @@ export function Testimonials() {
   const testimonials = [
   {
     quote:
-    'Nexora transformed our manual booking process into a seamless digital experience. Our efficiency went up by 60% almost overnight. The team was professional and understood our business needs perfectly.',
+    'Apex transformed our manual booking process into a seamless digital experience. Our efficiency went up by 60% almost overnight. The team was professional and understood our business needs perfectly.',
     author: 'Sarah Jenkins',
     role: 'Operations Director',
     company: 'AutoPro Services',
@@ -45,7 +45,7 @@ export function Testimonials() {
   },
   {
     quote:
-    'Working with Nexora Systems was a game-changer for our school. The management system they deployed eliminated mountains of paperwork and made parent communication effortless.',
+    'Working with Apex Systems was a game-changer for our school. The management system they deployed eliminated mountains of paperwork and made parent communication effortless.',
     author: 'James Wilson',
     role: 'Principal',
     company: 'Oakridge Academy',

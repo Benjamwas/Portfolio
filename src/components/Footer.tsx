@@ -20,7 +20,7 @@ export function Footer() {
             <Link to="/" className="flex items-center gap-2">
               <Hexagon className="w-8 h-8 text-royal dark:text-gold-500 fill-royal/20 dark:fill-gold-500/20" />
               <span className="font-bold text-xl tracking-tight text-navy-900 dark:text-white">
-                Nexora
+                Apex
                 <span className="text-royal dark:text-gold-500">Systems</span>
               </span>
             </Link>
@@ -127,7 +127,7 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-royal dark:text-gold-500 shrink-0" />
                 <span className="text-sm text-slate-600 dark:text-slate-400">
-                  hello@nexorasystems.com
+                  apex28281@gmail.com
                 </span>
               </li>
             </ul>
@@ -136,7 +136,7 @@ export function Footer() {
 
         <div className="border-t border-slate-200 dark:border-navy-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            © {currentYear} Nexora Systems. All rights reserved.
+            © {currentYear} Apex Systems. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-slate-500 dark:text-slate-400">
             <a

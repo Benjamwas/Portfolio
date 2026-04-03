@@ -107,10 +107,10 @@ export function About() {
             className="max-w-3xl mx-auto text-center">
             
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About Nexora Systems
+              About Apex Systems
             </h1>
             <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-              Nexora Systems is a premium digital solutions company focused on
+              Apex Systems is a premium digital solutions company focused on
               building scalable, efficient, and intelligent software systems for
               modern businesses.
             </p>

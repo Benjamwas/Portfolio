@@ -11,17 +11,42 @@ import {
 'lucide-react';
 import { toast } from 'sonner';
 export function Contact() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast.success('Message sent successfully! We will get back to you soon.');
-      (e.target as HTMLFormElement).reset();
-    }, 1500);
+ const [isSubmitting, setIsSubmitting] = useState(false);
+
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  const form = e.currentTarget; // This "saves" the form reference
+  setIsSubmitting(true);
+
+  const formData = new FormData(form);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    subject: formData.get('subject'),
+    message: formData.get('message')
   };
+
+  try {
+    const response = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      toast.success('Message sent successfully!');
+      // FIX HERE: Use the 'form' variable, not 'e.currentTarget'
+      form.reset(); 
+    } else {
+      toast.error('Failed to send message.');
+    }
+  } catch (error) {
+    console.error('Error sending message:', error);
+    toast.error('An error occurred.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
   return (
     <div className="pt-20 pb-24">
       {/* Header */}
@@ -91,6 +116,7 @@ export function Contact() {
                     <input
                       type="text"
                       id="name"
+                      name="name"
                       required
                       className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-navy-900/50 border border-slate-200 dark:border-navy-700 focus:ring-2 focus:ring-royal dark:focus:ring-gold-500 focus:border-transparent outline-none transition-all text-slate-900 dark:text-white"
                       placeholder="John Doe" />
@@ -106,6 +132,7 @@ export function Contact() {
                     <input
                       type="email"
                       id="email"
+                      name="email"
                       required
                       className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-navy-900/50 border border-slate-200 dark:border-navy-700 focus:ring-2 focus:ring-royal dark:focus:ring-gold-500 focus:border-transparent outline-none transition-all text-slate-900 dark:text-white"
                       placeholder="john@company.com" />
@@ -123,6 +150,7 @@ export function Contact() {
                   <input
                     type="text"
                     id="subject"
+                    name="subject"
                     required
                     className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-navy-900/50 border border-slate-200 dark:border-navy-700 focus:ring-2 focus:ring-royal dark:focus:ring-gold-500 focus:border-transparent outline-none transition-all text-slate-900 dark:text-white"
                     placeholder="How can we help?" />
@@ -138,6 +166,7 @@ export function Contact() {
                   </label>
                   <textarea
                     id="message"
+                    name = "message"
                     rows={5}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-navy-900/50 border border-slate-200 dark:border-navy-700 focus:ring-2 focus:ring-royal dark:focus:ring-gold-500 focus:border-transparent outline-none transition-all text-slate-900 dark:text-white resize-none"

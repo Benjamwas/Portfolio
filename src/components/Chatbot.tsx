@@ -15,7 +15,7 @@ const faqs: {
 {
   keywords: ['hello', 'hi', 'hey', 'good morning', 'good afternoon'],
   answer:
-  "Hello. Welcome to Nexora Systems. We're here to help answer your questions about our services, process, and more. What would you like to know?",
+  "Hello. Welcome to Apex Systems. We're here to help answer your questions about our services, process, and more. What would you like to know?",
   followUp: [
   'What services do you offer?',
   'How does your process work?',
@@ -108,7 +108,7 @@ const faqs: {
   'project'],
 
   answer:
-  "Starting a project is easy! Here's how:\n\n1. **Visit our Contact page** and fill out the form with your project details\n2. **Schedule a free 30-minute consultation** with our technical team\n3. We'll follow up with a proposal and timeline\n\nYou can also email us directly at hello@nexorasystems.com. We typically respond within 24 hours.",
+  "Starting a project is easy! Here's how:\n\n1. **Visit our Contact page** and fill out the form with your project details\n2. **Schedule a free 30-minute consultation** with our technical team\n3. We'll follow up with a proposal and timeline\n\nYou can also email us directly at hello@apexsystems.com. We typically respond within 24 hours.",
   followUp: ['What services do you offer?', 'How much does it cost?']
 },
 {
@@ -133,7 +133,7 @@ const faqs: {
 {
   keywords: ['location', 'where', 'based', 'office', 'remote'],
   answer:
-  'Nexora Systems is based in San Francisco, CA. However, we work with clients globally and are fully equipped for remote collaboration. Our team uses modern project management tools to ensure seamless communication regardless of timezone.',
+  'Apex Systems is based in San Francisco, CA. However, we work with clients globally and are fully equipped for remote collaboration. Our team uses modern project management tools to ensure seamless communication regardless of timezone.',
   followUp: ['How can I start a project?', 'How does your process work?']
 },
 {
@@ -145,7 +145,7 @@ const faqs: {
 
 const defaultResponse: Message = {
   id: '',
-  text: "I appreciate your question! I don't have a specific answer for that, but our team would love to help. You can reach us at hello@nexorasystems.com or visit our Contact page to get in touch directly.",
+  text: "I appreciate your question! I don't have a specific answer for that, but our team would love to help. You can reach us at hello@apexsystems.com or visit our Contact page to get in touch directly.",
   sender: 'bot',
   suggestions: [
   'What services do you offer?',
@@ -155,7 +155,7 @@ const defaultResponse: Message = {
 };
 const welcomeMessage: Message = {
   id: 'welcome',
-  text: "Hi there!  We're the Nexora assistant. We can help you learn about our services, process, pricing, and more. What would you like to know?",
+  text: "Hi there!  We're the Apex assistant. We can help you learn about our services, process, pricing, and more. What would you like to know?",
   sender: 'bot',
   suggestions: [
   'What services do you offer?',
@@ -316,7 +316,7 @@ export function Chatbot() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold text-sm">
-                    Nexora Assistant
+                    Apex Assistant
                   </h3>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
