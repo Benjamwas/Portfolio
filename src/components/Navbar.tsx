@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Moon, Sun, Hexagon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../assets/images/pex-removebg-preview.png';
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,12 +50,16 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <Hexagon className="w-8 h-8 text-royal dark:text-gold-500 fill-royal/20 dark:fill-gold-500/20 group-hover:rotate-12 transition-transform duration-300" />
-            <span className="font-bold text-xl tracking-tight text-navy-900 dark:text-white">
-              Apex
-              <span className="text-royal dark:text-gold-500">Systems</span>
-            </span>
-          </Link>
+  <img 
+    src={logo} 
+    alt="Apex Systems Logo" 
+    className="w-14 h-14 object-contain dark:invert transition-opacity opacity-100 duration-300 group-hover:scale-105"
+  />
+  <span className="font-bold text-xl tracking-tight text-navy-900 dark:text-white">
+    Apex
+    <span className="text-royal dark:text-gold-500">Systems</span>
+  </span>
+</Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">

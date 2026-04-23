@@ -32,9 +32,20 @@ export const projects: Project[] = [
       'Automated attendance tracking',
       'Dynamic grading and report card generation',
       'Secure parent portal with real-time updates',
-      'Internal messaging and announcement system'
+      'Internal messaging and announcement system',
+      'Online fee payment and financial management',
+      'Comprehensive analytics dashboard for school administrators',
+      'Mobile-friendly interface for on-the-go access',
+      'Integration with third-party educational tools and platforms',
+      'Role-based access control to ensure data security and privacy',
+      'School administration tools for scheduling, resource management, and communication',
+      'Remote learning capabilities with virtual classrooms and online assignments',
+      'Automated notifications and reminders for parents and staff',
+      'Customizable reporting features for academic performance and attendance trends',
+      'Scalable architecture to support multiple schools within a district or educational network',
+      'User-friendly interface designed for non-technical users, ensuring ease of adoption by school staff and parents'
     ],
-    techStack: ['React', 'Node.js', 'MySQL', 'Express', 'Redis'],
+    techStack: ['React', 'Node.js', 'MySQL', 'Express', 'Redis', 'm-pesa API'],
     impact: [
       'Reduced manual administrative workload by 70%',
       'Eliminated paper waste for report cards and notices',
@@ -46,7 +57,23 @@ export const projects: Project[] = [
     results: [
       'Process automation saved 40+ hours per week',
       'Improved parent satisfaction by 90%',
-      'Reduced administrative errors by 95%'
+      'Reduced administrative errors by 95%',
+      'Increased student attendance rates by 15%',
+      'Enhanced data security and compliance with educational regulations',
+      'Scalable architecture that supports future growth and feature expansion',
+      'Positive feedback from teachers and staff on usability and efficiency improvements',
+      'Recognition as a model for digital transformation in education within the region',
+      'Facilitated remote learning capabilities during school closures, ensuring continuity of education',
+      'Integrated analytics dashboard provided actionable insights for school administrators to make data-driven decisions',
+      'Established a secure and reliable communication channel between parents and teachers, fostering stronger relationships and community engagement',
+      'Enabled real-time updates and notifications for parents, improving transparency and trust in the school’s operations',
+      'Streamlined the grading process, allowing teachers to focus more on instruction and less on administrative tasks',
+      'Provided a centralized platform for all school-related activities, enhancing overall organizational efficiency',
+      'Easier school fees payment tracking and management, reducing financial discrepancies and improving cash flow',
+      'Facilitated better systems for accounting tasks with automated financial reporting and integration with accounting software',
+      'Enhanced data analytics capabilities for tracking student performance trends and identifying areas for improvement',
+      'Improved communication and collaboration among staff members through integrated messaging and scheduling features',
+      'Scalable infrastructure that can accommodate the growing needs of the school as it expands its student body and services'
     ]
   },
   {
@@ -113,8 +140,8 @@ export const projects: Project[] = [
     id: '4',
     slug: 'ecotenable-website',
     title: 'Ecotenable Corporate Website',
-    shortDescription: 'High-conversion corporate web presence for environmental consulting.',
-    overview: 'A premium, SEO-optimized corporate website designed to establish environmental authority, showcase services, and capture high-quality leads.',
+    shortDescription: 'High-conversion corporate web presence for environmental consulting and climatetech services.',
+    overview: 'A premium, SEO-optimized corporate website designed to establish environmental authority, showcase services, and develop policies for institutions and governments.',
     problem: "The client's previous website was outdated, slow, and failed to reflect their premium market positioning, resulting in a high bounce rate and low lead generation.",
     solution: 'We designed and developed a modern, lightning-fast website with focus on user experience, clear value propositions, and strategic conversion points.',
     features: [
@@ -122,13 +149,18 @@ export const projects: Project[] = [
       'Dynamic service showcase and case study portfolio',
       'Integrated contact and lead capture forms',
       'SEO optimized architecture',
-      'CMS integration for easy content updates'
+      'CMS integration for easy content updates',
+      'BlockChain smart contract integration for secure policy development and verification',
+      'AI-powered content generation and optimization for enhanced SEO and user engagement'
     ],
-    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite', 'Solana Web3.js', 'OpenAI API'],
     impact: [
       '300% increase in organic traffic within 3 months',
       'Doubled the conversion rate of site visitors to leads',
-      'Significantly improved brand perception and trust'
+      'Significantly improved brand perception and trust',
+      'Established the client as a thought leader in the environmental consulting space',
+      'Secured high-profile contracts with government and institutional clients',
+      'Enhanced content strategy and SEO performance through AI-driven optimization'
     ],
     link: 'https://ecotenable.com',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000&h=630',

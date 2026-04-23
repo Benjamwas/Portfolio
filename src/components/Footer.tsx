@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/images/pex-removebg-preview.png';
 import {
   Hexagon,
   Mail,
@@ -17,8 +18,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
-              <Hexagon className="w-8 h-8 text-royal dark:text-gold-500 fill-royal/20 dark:fill-gold-500/20" />
+            <Link to="/" className="flex items-center gap-2 group">
+              <img 
+                src={logo} 
+                alt="Apex Systems Logo" 
+                className="w-14 h-14 object-contain dark:invert transition-opacity opacity-100 duration-300 group-hover:scale-105"
+              />
               <span className="font-bold text-xl tracking-tight text-navy-900 dark:text-white">
                 Apex
                 <span className="text-royal dark:text-gold-500">Systems</span>

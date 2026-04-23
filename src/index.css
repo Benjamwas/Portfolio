@@ -1,48 +1,64 @@
-/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+/* TAILWIND IMPORTS */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
-
+/* BASE LAYER */
 @layer base {
   body {
-    @apply bg-light text-charcoal transition-colors duration-300 antialiased selection:bg-royal selection:text-white;
+    @apply bg-burgundy-900 text-slate-200 transition-colors duration-300 antialiased selection:bg-gold-500 selection:text-burgundy-900;
   }
+
   .dark body {
     @apply bg-dark text-slate-300 selection:bg-gold-500 selection:text-navy-900;
   }
+
+  /* ✅ GOLD HEADERS */
   h1, h2, h3, h4, h5, h6 {
-    @apply text-navy-900 dark:text-white font-bold tracking-tight;
+    @apply text-gold-500 font-bold tracking-tight;
   }
 }
+
+/* UTILITIES */
 @layer utilities {
+
+  /* ✅ Burgundy Glass */
   .glass {
-    @apply bg-white/70 dark:bg-navy-900/70 backdrop-blur-md border border-white/20 dark:border-white/10;
+    @apply bg-burgundy-800/70 backdrop-blur-md border border-gold-500/10;
   }
+
+  /* ✅ Cards */
   .glass-card {
-    @apply bg-white dark:bg-navy-800 border border-slate-200 dark:border-navy-700 shadow-sm hover:shadow-md transition-all duration-300;
+    @apply bg-burgundy-800 border border-burgundy-700 shadow-sm hover:shadow-md transition-all duration-300;
   }
+
+  /* ✅ Premium Gradient (Gold → Burgundy) */
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-royal to-navy-900 dark:from-blue-400 dark:to-teal-300;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-400 to-burgundy-500;
   }
 }
+
+/* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
 }
-/* Custom scrollbar for a premium feel */
+
+/* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  @apply bg-light dark:bg-dark;
+  @apply bg-burgundy-900;
 }
+
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-300 dark:bg-navy-700 rounded-full;
+  @apply bg-burgundy-700 rounded-full;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-400 dark:bg-navy-700;
+  @apply bg-burgundy-600;
 }
